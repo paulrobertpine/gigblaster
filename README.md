@@ -1,6 +1,6 @@
 Gig Blaster
 ===========
-I wrote this plugin to learn about how WP plugins work but also to simplify adding gigs to my website. I happily used [https://wordpress.org/plugins/really-simple-events/](Really Simple Events) for years, and this plugin is very much inspired by that, but takes it a couple steps further to make my workflow EVEN EASIER.
+I wrote this plugin to learn about how WP plugins work but also to simplify adding gigs to my website. I happily used [Really Simple Events](https://wordpress.org/plugins/really-simple-events) for years, and this plugin is very much inspired by that, but takes it a couple steps further to make my workflow EVEN EASIER.
 
 Usage
 -----
