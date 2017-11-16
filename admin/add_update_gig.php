@@ -19,10 +19,8 @@ if ( isset( $edit_id ) && !isset($_POST['submit']) ) {
 	}
 }
 
-// echo "<pre>" . print_r($field_array) . "</pre>";
-
 /**
- * validation
+ * validation and create/update
  */
 if( isset($_POST['submit']) ) {
 
@@ -47,9 +45,8 @@ if( isset($_POST['submit']) ) {
 		}
 	}
 }
-
-// echo $return_message;
 ?>
+
 <div class="wrap">
 	<h2><?php echo ( isset( $edit_id ) ) ? 'Edit Gig' : 'Add Gig'; ?></h2>
 

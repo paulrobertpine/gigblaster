@@ -1,0 +1,51 @@
+.gigblaster {
+  list-style: none;
+}
+
+.gigblaster li {
+  border-bottom: 1px solid #ccc;
+}
+
+.gigblaster div {
+  padding: 1em 0;
+}
+
+.gigblaster .gig-time {
+  display: inline-block;
+  width: 50%;
+}
+
+.gigblaster .gig-title {
+  display: inline-block;
+  width: 50%;
+}
+
+.gigblaster .gig-description  {
+  background-color: #eee;
+  padding: 0;
+  text-align: center;
+}
+
+.gigblaster .gig-description-button {
+  height: 30px;
+}
+
+.gigblaster .gig-description-button {
+}
+
+.gigblaster .gig-description-button:hover  {
+  background-color: #ddd;
+}
+
+/*.gigblaster .gig-description .icon {
+  color: #777;
+  margin: 0 auto;
+  padding: 0;
+  vertical-align: middle;
+}*/
+
+.gigblaster .gig-description .gig-description-text {
+  display: none;
+  padding: 1em;
+  text-align: left;
+}

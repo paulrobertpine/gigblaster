@@ -9,7 +9,6 @@ if ( isset( $delete_id ) ) {
   echo "<div class='wrap'><div class='updated'>" . $return_message . "</div></div>";
 }
 
-
 ?>
 <div class="wrap">
   <h2>Gigs</h2>

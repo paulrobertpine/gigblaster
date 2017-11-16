@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Gig Blaster
- * Description: My gigs plugin
+ * Description: A simple gigs plugin
  * Version: 0.1
  * Author: Paul Clifford
  */
@@ -38,14 +38,25 @@ add_shortcode( 'gigblaster' , 'gigblaster_display_gigs' );
 function gigblaster_display_gigs() {
   global $wpdb;
   $gigs = gigblaster_get_upcoming_gigs();
+  $public_date_format = "D, M.j, Y - g:ia"; // Sunday November 4th -- 6:00pm
 
-  echo "<ul>";
+  wp_enqueue_style( 'gigblaster_styles', plugin_dir_url( __FILE__ ) . 'style.css' );
+  wp_register_script( 'gigblaster_script', plugin_dir_url( __FILE__ ) . 'js/gigblaster.js', array('jquery'));
+  wp_enqueue_script( 'gigblaster_script' );
+
+  echo "<ul class=\"gigblaster\">";
 
   foreach ($gigs as $gig) {
     echo "<li>";
-    echo "<span class='gig-title'>" . $gig->title . "</span>";
-    echo "<span class='gig-time'>" . $gig->start_time . "</span>";
-    echo "<span class='gig-time'>" . $gig->description . "</span>";
+    echo "<div class='gig-time'>" . date( $public_date_format, strtotime( $gig->start_time ) ) . "</div>";
+    echo "<div class='gig-title'>" . $gig->title . "</div>";
+    if ( $gig->description ) {
+      echo "<div class='gig-description'>" .
+            "<div class='gig-description-button'></div>" .
+            // "<span class='icon dashicons dashicons-arrow-down-alt2'></span>" .
+            "<div class='gig-description-text'>" . $gig->description . "</div>" .
+            "</div>";
+    }
     echo "</li>";
   }
 
