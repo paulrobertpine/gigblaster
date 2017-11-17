@@ -10,7 +10,6 @@ Use the shortcode `[gigblaster]` to display upcoming gigs wherever you like.
 
 Todo
 ----
-- add default date when adding a new gig
-- make upcoming / past views sticky and remove or gray out other link
 - add JS timepicker
-- add default CSS
+- make upcoming / past views sticky and remove or gray out other link
+- make the gig details button look better
