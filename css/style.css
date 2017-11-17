@@ -1,31 +1,31 @@
 .gigblaster {
   list-style: none;
+  margin: 1em 0;
+  padding: 1em 0;
 }
 
 .gigblaster li {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #c0c0c0;
 }
 
 .gigblaster .gig-time {
   display: inline-block;
   padding: 1em 0;
-  width: 50%;
+  width: 45%;
 }
 
 .gigblaster .gig-title {
   display: inline-block;
   padding: 1em 0;
-  width: 50%;
-}
-
-.gigblaster .gig-description  {
-  background-color: #eee;
+  width: 45%;
 }
 
 .gigblaster .gig-description-button {
-  height: 1.2em;
+  display: inline-block;
   background: url('../svg/arrow-down.svg') no-repeat center center;
   background-size: 1em;
+  padding: 1em 0;
+  width: 10%;
 }
 
 .gigblaster .gig-description-button.active {
@@ -33,10 +33,11 @@
 }
 
 .gigblaster .gig-description-button:hover  {
-  background-color: #ddd;
+  background-color: #eee;
 }
 
-.gigblaster .gig-description .gig-description-text {
+.gigblaster .gig-description-text {
+  background-color: #eee;
   display: none;
   padding: 1em;
   text-align: left;
