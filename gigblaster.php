@@ -40,11 +40,11 @@ function gigblaster_display_gigs() {
   $gigs = gigblaster_get_upcoming_gigs();
   $public_date_format = "D, M.j, Y - g:ia"; // Sunday November 4th -- 6:00pm
 
-  wp_enqueue_style( 'gigblaster_styles', plugin_dir_url( __FILE__ ) . 'style.css' );
+  wp_enqueue_style( 'gigblaster_styles', plugin_dir_url( __FILE__ ) . 'css/style.css' );
   wp_register_script( 'gigblaster_script', plugin_dir_url( __FILE__ ) . 'js/gigblaster.js', array('jquery'));
   wp_enqueue_script( 'gigblaster_script' );
 
-  echo "<ul class=\"gigblaster\">";
+  echo "<ul class='gigblaster'>";
 
   foreach ($gigs as $gig) {
     echo "<li>";

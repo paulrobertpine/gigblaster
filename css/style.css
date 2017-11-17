@@ -6,43 +6,39 @@
   border-bottom: 1px solid #ccc;
 }
 
-.gigblaster div {
+/*.gigblaster div {
   padding: 1em 0;
-}
+}*/
 
 .gigblaster .gig-time {
   display: inline-block;
+  padding: 1em 0;
   width: 50%;
 }
 
 .gigblaster .gig-title {
   display: inline-block;
+  padding: 1em 0;
   width: 50%;
 }
 
 .gigblaster .gig-description  {
   background-color: #eee;
-  padding: 0;
-  text-align: center;
 }
 
 .gigblaster .gig-description-button {
-  height: 30px;
+  height: 1.2em;
+  background: url('../svg/arrow-down.svg') no-repeat center center;
+  background-size: 1em;
 }
 
-.gigblaster .gig-description-button {
+.gigblaster .gig-description-button.active {
+  background-image: url('../svg/arrow-up.svg');
 }
 
 .gigblaster .gig-description-button:hover  {
   background-color: #ddd;
 }
-
-/*.gigblaster .gig-description .icon {
-  color: #777;
-  margin: 0 auto;
-  padding: 0;
-  vertical-align: middle;
-}*/
 
 .gigblaster .gig-description .gig-description-text {
   display: none;
