@@ -53,7 +53,6 @@ function gigblaster_display_gigs() {
     if ( $gig->description ) {
       echo "<div class='gig-description'>" .
             "<div class='gig-description-button'></div>" .
-            // "<span class='icon dashicons dashicons-arrow-down-alt2'></span>" .
             "<div class='gig-description-text'>" . $gig->description . "</div>" .
             "</div>";
     }
