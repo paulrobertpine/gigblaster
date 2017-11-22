@@ -51,7 +51,7 @@ function gigblaster_display_gigs() {
     echo "<div class='gig-time'>" . date( $public_date_format, strtotime( $gig->start_time ) ) . "</div>";
     echo "<div class='gig-title'>" . $gig->title . "</div>";
     if ( $gig->description ) { echo "<div class='gig-description-button'>&nbsp;</div>" . // &nbsp; is important here
-      "<div class='gig-description-text'>" . $gig->description . "</div>";
+      "<div class='gig-description-text'>" . wpautop($gig->description) . "</div>";
     }
     echo "</li>";
   }
