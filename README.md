@@ -12,3 +12,4 @@ Todo
 ----
 - add JS timepicker
 - make upcoming / past views sticky and remove or gray out other link
+- add "Add Gig" buttons to admin screens
